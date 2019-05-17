@@ -1,0 +1,11 @@
+machine : un module de micropython. Le micropython permet d'ajouter plein de prendre en compte plein de petits appareils électroniques.
+
+Quelques lectures :
+machine.Pin(x) : donner le numéro x à l'élément que l'on souhaite étudier / prendre en compte avec cette commande.
+machine.Pin.OUT : appareil configuré en mode output.
+
+
+machine.I2C (from doc):
+    scl: should be a pin object specifying the pin to use for SCL.
+    sda: should be a pin object specifying the pin to use for SDA.
+SCL & SDA: the 2 wires on the physical I2C bus. SCL: clock line, synchonizes all data transfers over the I2C bus. SDA: data line.

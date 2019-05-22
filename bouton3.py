@@ -19,12 +19,12 @@ d = dht.DHT22(machine.Pin(3))
 hum = 0
 temp = 0
 
-d.measure()
-hum = d.humidity()
-temp = d.temperature()
+d.measure() # On fait une mesure
+hum = d.humidity() # On stocke la valeur de l'humidité dans une variable hum
+temp = d.temperature() # On stocke la valeur de la température dans une variate temp
 
 led = Pin(2, Pin.OUT)
-button = Pin(14, Pin.IN, Pin.PULL_UP)
+button = Pin(14, Pin.IN, Pin.PULL_UP) # Bouton configuré pour de l'input, avec un pull up resistor
 i = 0
 j = 0
 start = time.ticks_ms()

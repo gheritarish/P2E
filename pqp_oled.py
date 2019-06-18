@@ -7,7 +7,7 @@
 #del  sys.modules['pqp_oled']
 
 from machine import I2C, Pin
-i2c= I2C(scl=Pin(5), sda=Pin(4)) # On crée une machine, piste orloge en 5 et piste données en 4
+i2c= I2C(scl=Pin(5), sda=Pin(4)) # On crée une machine, piste horloge en 5 et piste données en 4
 
 import ssd1306
 
